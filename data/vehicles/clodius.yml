@@ -1,0 +1,21 @@
+---
+name: 'cloduis'
+class: 'Light Ground APC'
+alignment: 'TOG'
+cost: 165500
+mass: 36
+engine: 300
+movement_points: 8
+scenario_points: 2
+infantry_squad: true
+digging_cannons: false
+armor:
+  - front: 30
+  - right: 20
+  - left: 20
+  - stern: 20
+  - bottom: 10
+  - turret: 40
+weapons:
+  - [ name: '1.5/5 laser', location: 'turret' ]
+  - [ name: 'AP laser', location: 'turret' ]
