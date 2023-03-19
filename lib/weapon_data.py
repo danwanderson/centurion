@@ -23,6 +23,11 @@ class Weapon(yaml.YAMLObject):
         )
 
 
+weapon_data_dir = '../data/weapons'
+dir_list = os.listdir(weapon_data_dir)
+
+for files in dir_list:
+    print(files)
 stream = open('../data/weapons/3_6_laser.yml', 'r')
 laser = yaml.safe_load(stream)
 print(laser)
