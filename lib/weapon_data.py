@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import yaml
+import os
+import re
 
 
 class Weapon(yaml.YAMLObject):
@@ -23,13 +25,19 @@ class Weapon(yaml.YAMLObject):
         )
 
 
+# need to make this safer/work better if file is called
+# from a weird path
 weapon_data_dir = '../data/weapons'
 dir_list = os.listdir(weapon_data_dir)
+weapon_data = dict()
 
 for files in dir_list:
-    print(files)
-stream = open('../data/weapons/3_6_laser.yml', 'r')
-laser = yaml.safe_load(stream)
-print(laser)
-print(laser['name'])
-print(laser['power'])
+    if '.yml' in files:
+        # read file and add to dictonary
+        file_stream = open(weapon_data_dir + '/' + files, 'r')
+        weapon = yaml.safe_load(file_stream)
+        weapon_data[weapon['name']] = weapon
+
+for weapon in weapon_data:
+    print(weapon_data[weapon])
+
