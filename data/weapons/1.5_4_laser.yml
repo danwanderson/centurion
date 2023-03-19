@@ -1,5 +1,4 @@
-%TAG ! Weapon
----
+--- !Weapon
 name: '1.5/4 laser'
 damage: 5
 range: 20

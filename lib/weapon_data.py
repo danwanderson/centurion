@@ -6,7 +6,7 @@ import re
 
 
 class Weapon(yaml.YAMLObject):
-    yaml_tag = u'Weapon'
+    yaml_tag = u'!Weapon'
     yaml_loader = yaml.SafeLoader
 
     def __init__(self, name, damage, range, power, mass, cost):
@@ -18,8 +18,7 @@ class Weapon(yaml.YAMLObject):
         self.cost = cost
 
     def __repr__(self):
-        return "%s(name=%r, damage=%r, range=%r, power=%r, mass=%r, \
-            cost=%r)" % (
+        return "%s(name=%r, damage=%r, range=%r, power=%r, mass=%r, cost=%r)" % (
             self.__class__.__name__, self.name, self.damage, self.range,
             self.power, self.mass, self.cost,
         )
@@ -36,7 +35,7 @@ for files in dir_list:
         # read file and add to dictonary
         file_stream = open(weapon_data_dir + '/' + files, 'r')
         weapon = yaml.safe_load(file_stream)
-        weapon_data[weapon['name']] = weapon
+        weapon_data[weapon.name] = weapon
 
 for weapon in weapon_data:
     print(weapon_data[weapon])

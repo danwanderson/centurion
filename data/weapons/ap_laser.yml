@@ -1,5 +1,4 @@
-%TAG ! Weapon
----
+--- !Weapon
 name: 'AP laser'
 damage: 'S'
 range: 3
