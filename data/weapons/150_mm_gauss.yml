@@ -1,0 +1,11 @@
+--- !Weapon
+name: '150 mm'
+type: 'gauss'
+damage: 'T'
+range: 15
+power: 5
+mass: 66
+cost: 330000
+ammo_type:
+  - 'HEAP'
+  - 'APDS'

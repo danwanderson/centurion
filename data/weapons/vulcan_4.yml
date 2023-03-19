@@ -1,0 +1,9 @@
+--- !Weapon
+name: 'Vulcan-4'
+type: 'other'
+damage: 'S'
+range: 0
+power: 15
+mass: 15
+cost: 60000
+ammo_type:

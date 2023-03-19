@@ -1,0 +1,11 @@
+--- !Weapon
+name: '200 mm'
+type: 'gauss'
+damage: 'T'
+range: 15
+power: 9
+mass: 106
+cost: 528000
+ammo_type:
+  - 'HEAP'
+  - 'APDS'

@@ -1,8 +1,8 @@
 --- !Weapon
-name: 'TVLG(4)'
+name: 'SMLM(2)'
 type: 'other'
 damage: 'T'
-range: 6
+range: 10
 power: 0
 mass: 6
 cost: 20000

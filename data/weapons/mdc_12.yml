@@ -1,0 +1,9 @@
+--- !Weapon
+name: 'MDC 12'
+type: 'MDC'
+damage: 'T'
+range: 20
+power: 12
+mass: 46
+cost: 300000
+ammo_type:

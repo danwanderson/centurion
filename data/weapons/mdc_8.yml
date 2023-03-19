@@ -1,0 +1,9 @@
+--- !Weapon
+name: 'MDC 8'
+type: 'MDC'
+damage: 'T'
+range: 20
+power: 6
+mass: 24
+cost: 168000
+ammo_type:

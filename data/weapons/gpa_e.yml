@@ -1,0 +1,9 @@
+--- !Weapon
+name: 'GPA/E'
+type: 'other'
+damage: 'S'
+range: 500
+power: 18
+mass: 112
+cost: 1056000
+ammo_type:

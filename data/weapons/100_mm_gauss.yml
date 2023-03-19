@@ -1,0 +1,12 @@
+--- !Weapon
+name: '100 mm'
+type: 'gauss'
+damage: 'T'
+range: 10
+power: 4
+mass: 47
+cost: 234000
+ammo_type:
+  - 'HEAP'
+  - 'APDS'
+  - 'H.H.'

@@ -1,9 +1,9 @@
 --- !Weapon
-name: 'TVLG(4)'
+name: 'TVLG(6)'
 type: 'other'
 damage: 'T'
 range: 6
 power: 0
-mass: 6
-cost: 20000
+mass: 9
+cost: 30000
 ammo_type:

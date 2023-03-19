@@ -1,0 +1,12 @@
+--- !Weapon
+name: '25 mm'
+type: 'gauss'
+damage: 'T'
+range: 6
+power: 1
+mass: 14
+cost: 67500
+ammo_type:
+  - 'HEAP'
+  - 'APDS'
+  - 'H.H.'

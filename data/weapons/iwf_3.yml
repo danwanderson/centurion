@@ -1,0 +1,9 @@
+--- !Weapon
+name: 'IWF 3'
+type: 'other'
+damage: 'T'
+range: 3
+power:
+mass:
+cost:
+ammo_type:

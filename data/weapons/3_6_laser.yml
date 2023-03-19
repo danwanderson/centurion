@@ -1,7 +1,9 @@
 --- !Weapon
 name: '3/6 laser'
+type: 'laser'
 damage: 8
 range: 20
 power: 15
 mass: 15
 cost: 180000
+ammo_type:

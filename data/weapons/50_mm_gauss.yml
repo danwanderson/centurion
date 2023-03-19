@@ -1,0 +1,12 @@
+--- !Weapon
+name: '50 mm'
+type: 'gauss'
+damage: 'T'
+range: 6
+power: 3
+mass: 43
+cost: 216000
+ammo_type:
+  - 'HEAP'
+  - 'APDS'
+  - 'H.H.'

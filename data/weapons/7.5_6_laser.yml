@@ -1,7 +1,9 @@
 --- !Weapon
 name: '7.5/6 laser'
+type: 'laser'
 damage: 10
 range: 20
 power: 23
 mass: 23
 cost: 276000
+ammo_type:

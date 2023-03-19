@@ -1,0 +1,9 @@
+--- !Weapon
+name: 'MDC 10'
+type: 'MDC'
+damage: 'T'
+range: 20
+power: 11
+mass: 42
+cost: 250000
+ammo_type:

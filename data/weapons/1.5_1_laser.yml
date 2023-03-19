@@ -1,7 +1,9 @@
 --- !Weapon
 name: '1.5/1 laser'
+type: 'laser'
 damage: 2
 range: 20
 power: 2
 mass: 2
 cost: 24000
+ammo_type:

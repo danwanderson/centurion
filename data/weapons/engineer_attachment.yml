@@ -1,0 +1,9 @@
+--- !Weapon
+name: 'Engineer Attachment'
+type: 'other'
+damage: 'S'
+range:
+power: 30
+mass: 30
+cost: 150000
+ammo_type:
