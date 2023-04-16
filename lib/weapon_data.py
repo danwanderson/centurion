@@ -57,23 +57,26 @@ def dump_weapon_data(weapon_data):
             print(weapon)
 
 
-# Get path of current file
-lib_path = os.path.dirname(__file__)
-# Add relative path to the data directory
-weapon_data_dir = lib_path + '/../data/weapons'
-# Set up a dictionary to store the data
-weapon_data = []
+def read_weapon_data():
+    # Get path of current file
+    lib_path = os.path.dirname(__file__)
+    # Add relative path to the data directory
+    weapon_data_dir = lib_path + '/../data/weapons'
+    # Set up a dictionary to store the data
+    weapon_data = []
 
-# get a list of the files in the directory
-with os.scandir(weapon_data_dir) as dir_list:
-    for file in dir_list:
-        # make sure it's a non-empty yml file
-        if file.name.endswith('.yml') and file.is_file() and file.stat().st_size != 0:
-            # read file and add to dictonary
-            file_stream = open(weapon_data_dir + '/' + file.name, 'r')
-            weapon = yaml.safe_load(file_stream)
-            if weapon.name in weapon_data:
-                print("WARNING: duplicate input detected: " + weapon.name)
-            weapon_data.append(weapon)
+    # get a list of the files in the directory
+    with os.scandir(weapon_data_dir) as dir_list:
+        for file in dir_list:
+            # make sure it's a non-empty yml file
+            if file.name.endswith('.yml') and file.is_file() and file.stat().st_size != 0:
+                # read file and add to dictonary
+                file_stream = open(weapon_data_dir + '/' + file.name, 'r')
+                weapon = yaml.safe_load(file_stream)
+                if weapon.name in weapon_data:
+                    print("WARNING: duplicate input detected: " + weapon.name)
+                weapon_data.append(weapon)
 
-dump_weapon_data(weapon_data)
+    return weapon_data
+
+# dump_weapon_data(weapon_data)
