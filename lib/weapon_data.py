@@ -20,8 +20,8 @@ class Weapon(yaml.YAMLObject):
         self.ammo_type = ammo_type
 
     def __repr__(self):
-        return "%s(name=%r, type=%r, damage=%r, range=%r, power=%r, mass=%r, cost=%r, ammo_type=%r)" % (
-            self.__class__.__name__, self.name, self.type, self.damage, self.range,
+        return "%s(name=%r, type=%r, damage=%r, range=%r, power=%r, mass=%r, cost=%r, ammo_type=%r)" % ( # noqa E501
+            self.__class__.__name__, self.name, self.type, self.damage, self.range, # noqa E501
             self.power, self.mass, self.cost, self.ammo_type,
         )
 
@@ -30,14 +30,15 @@ class Weapon(yaml.YAMLObject):
         return self.name
 
 
-
 # return the type of a weapon
 def get_weapon_type(weapon):
     return weapon.type
 
+
 # return the name of a weapon
 def get_weapon_name(weapon):
     return weapon.name
+
 
 def dump_weapon_data(weapon_data):
     # get a unique list of weapon types
@@ -48,12 +49,13 @@ def dump_weapon_data(weapon_data):
 
     # For each weapon type, generate a sorted list and print it
     for type in weapon_types:
-        items=[]
+        items = []
         for weapon in weapon_data:
             if type in weapon.type:
                 items.append(weapon)
         for weapon in natsorted(items, key=get_weapon_name):
             print(weapon)
+
 
 # Get path of current file
 lib_path = os.path.dirname(__file__)
